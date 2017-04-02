@@ -7,9 +7,13 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'about.page.html',
 })
 export class AboutPage {
-
+    wassup: string;
   constructor(public navCtrl: NavController) {
-
+      // hello world
+      this.wassup = 'hello world';
+  }
+  displayHelloWorld(): string {
+      return this.wassup;
   }
 
 }
